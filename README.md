@@ -1,3 +1,5 @@
+![](https://github.com/Accolith/GC-controller-enabler/blob/main/Screenshot%202025-07-14%20204357.png)
+
 **About**
 
 This is a small tool I wrote that lets you connect the gamecube controller via USB to make it usable on Steam.
