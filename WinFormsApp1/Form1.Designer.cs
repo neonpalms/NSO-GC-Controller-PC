@@ -55,6 +55,9 @@
             progressBarRight = new ProgressBar();
             stick_left = new PictureBox();
             stick_right = new PictureBox();
+            button2 = new Button();
+            checkBox_360 = new CheckBox();
+            checkBox_ps4 = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)stick_left).BeginInit();
             ((System.ComponentModel.ISupportInitialize)stick_right).BeginInit();
@@ -74,7 +77,7 @@
             // 
             progressBar1.Location = new Point(12, 248);
             progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(415, 23);
+            progressBar1.Size = new Size(135, 23);
             progressBar1.TabIndex = 2;
             // 
             // pictureBox1
@@ -286,12 +289,49 @@
             stick_right.TabIndex = 30;
             stick_right.TabStop = false;
             // 
+            // button2
+            // 
+            button2.Location = new Point(348, 248);
+            button2.Name = "button2";
+            button2.Size = new Size(79, 23);
+            button2.TabIndex = 31;
+            button2.Text = "Emulate";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // checkBox_360
+            // 
+            checkBox_360.AutoSize = true;
+            checkBox_360.Checked = true;
+            checkBox_360.CheckState = CheckState.Checked;
+            checkBox_360.Location = new Point(153, 251);
+            checkBox_360.Name = "checkBox_360";
+            checkBox_360.Size = new Size(74, 19);
+            checkBox_360.TabIndex = 32;
+            checkBox_360.Text = "Xbox 360";
+            checkBox_360.UseVisualStyleBackColor = true;
+            checkBox_360.CheckedChanged += checkBox_360_CheckedChanged;
+            // 
+            // checkBox_ps4
+            // 
+            checkBox_ps4.AutoSize = true;
+            checkBox_ps4.Location = new Point(242, 251);
+            checkBox_ps4.Name = "checkBox_ps4";
+            checkBox_ps4.Size = new Size(81, 19);
+            checkBox_ps4.TabIndex = 33;
+            checkBox_ps4.Text = "Dualshock";
+            checkBox_ps4.UseVisualStyleBackColor = true;
+            checkBox_ps4.CheckedChanged += checkBox_ps4_CheckedChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoValidate = AutoValidate.EnablePreventFocusChange;
             ClientSize = new Size(439, 277);
+            Controls.Add(checkBox_ps4);
+            Controls.Add(checkBox_360);
+            Controls.Add(button2);
             Controls.Add(stick_right);
             Controls.Add(stick_left);
             Controls.Add(progressBarRight);
@@ -319,7 +359,7 @@
             Controls.Add(progressBar1);
             Controls.Add(button1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "GC enabler tool";
             FormClosing += Form1_FormClosing;
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -357,5 +397,8 @@
         private ProgressBar progressBarRight;
         private PictureBox stick_left;
         private PictureBox stick_right;
+        private Button button2;
+        private CheckBox checkBox_360;
+        private CheckBox checkBox_ps4;
     }
 }
