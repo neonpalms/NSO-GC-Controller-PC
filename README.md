@@ -18,6 +18,8 @@ You can also press the Emulate button after connecting to make it emulate a 360 
 - Build it :D
 Or run "dotnet build WinFormsApp1/WinFormsApp1.csproj -c Release" in the repository.
 
+You might need to change the values for the analog shoulder button emulation. Each controller seems to have varying values for non-pressed, fully pressed, and at the bump. So you might need to adapt them to your controllers values in order to get full coverage and no jumps in values. 
+
 **How to use**
 
 After you press connect and see your inputs work you can close the window. You should then be able to configure the controller in steam successfully. For me I only had to configure once, on later uses I just had to use the tool and steam remembered the configured controller.
