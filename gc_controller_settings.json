@@ -1,0 +1,10 @@
+{
+  "left_base": 32.0,
+  "left_bump": 190.0,
+  "left_max": 230.0,
+  "right_base": 32.0,
+  "right_bump": 190.0,
+  "right_max": 230.0,
+  "bump_100_percent": true,
+  "emulation_mode": "xbox360"
+}
