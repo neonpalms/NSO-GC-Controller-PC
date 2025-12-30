@@ -3,7 +3,7 @@ echo Building GameCube Controller Enabler for Windows...
 
 REM Build executable with PyInstaller
 echo Building executable...
-python -m PyInstaller --onefile --windowed --name "GC-Controller-Enabler" gc_controller_enabler.py
+python -m PyInstaller --onefile --collect-binaries vgamepad --windowed --name "GC-Controller-Enabler" gc_controller_enabler.py
 
 echo Build complete! Executable is in dist/
 echo.
